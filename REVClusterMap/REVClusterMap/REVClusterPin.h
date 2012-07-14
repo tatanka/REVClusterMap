@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import "Item.h"
 
 @interface REVClusterPin : NSObject  <MKAnnotation> {
     CLLocationCoordinate2D coordinate;
@@ -23,6 +24,7 @@
 @property(nonatomic, assign) CLLocationCoordinate2D coordinate;
 @property(nonatomic, copy) NSString *title;
 @property(nonatomic, copy) NSString *subtitle;
+@property (nonatomic, retain) Item *item;
 
 - (NSUInteger) nodeCount;
 

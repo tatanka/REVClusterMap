@@ -12,7 +12,7 @@
 
 
 @implementation REVClusterPin
-@synthesize title,coordinate,subtitle;
+@synthesize title, coordinate, subtitle, item;
 @synthesize nodes;
 
 - (NSUInteger) nodeCount
